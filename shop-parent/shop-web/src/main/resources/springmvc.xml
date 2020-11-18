@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+<!--   <bean name="conversionService2" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+        <property name="converters">
+            <set>
+                <bean class="com.shop.convert.CustomerConveter"></bean>
+            </set>
+        </property>
+    </bean> -->
+
+    <!--  开启注解扫描  -->
+    <context:component-scan base-package="com.yueqian.controller"></context:component-scan>
+    <!--使用注解的方法用新的映射器和适配器-->
+   <!-- <mvc:annotation-driven conversion-service="conversionService2"></mvc:annotation-driven> -->
+   <mvc:annotation-driven />
+    <!--视图解析器-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/view/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
+    <!--配置全局的异常处理器-->
+    <!-- <bean class="com.shop.exception.GoableException"></bean> -->
+</beans>

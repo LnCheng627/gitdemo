@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.yueqian</groupId>
+    <artifactId>shop-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>shop-dao</artifactId>
+  <name>shop-dao</name>
+  <description>dao层</description>
+  
+  <dependencies>
+	<!--把pojo的工程jar依赖添加进来-->
+		<dependency>
+			<groupId>com.yueqian</groupId>
+			<artifactId>shop-pojo</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>  
+   <build>
+     		<resources>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**/*.properties</include>
+					<include>**/*.xml</include>
+				</includes>
+				<filtering>false</filtering>
+			</resource>
+		</resources>
+ 	 <finalName>${project.artifactId}</finalName>
+ </build>
+
+</project>

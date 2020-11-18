@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.yueqian</groupId>
+    <artifactId>shop-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>shop-pojo</artifactId>
+  <name>shop-pojo</name>
+  <description>实体类</description>
+  
+    <build>
+   <!-- 如果不添加此节点mybatis的mapper.xml文件都会被漏掉。 -->
+   		<resources>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**/*.properties</include>
+					<include>**/*.xml</include>
+				</includes>
+				<filtering>false</filtering>
+			</resource>
+		</resources>
+ 	 <finalName>${project.artifactId}</finalName>
+ </build>
+</project>

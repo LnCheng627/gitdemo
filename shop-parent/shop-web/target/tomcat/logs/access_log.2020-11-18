@@ -1,0 +1,8 @@
+0:0:0:0:0:0:0:1 - - [18/Nov/2020:08:47:02 +0800] "GET /shop-web/ HTTP/1.1" 200 314 http-bio-8080-exec-1 106
+0:0:0:0:0:0:0:1 - - [18/Nov/2020:08:47:02 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-3 0
+0:0:0:0:0:0:0:1 - - [18/Nov/2020:08:47:07 +0800] "POST /shop-web/user/dologin HTTP/1.1" 302 - http-bio-8080-exec-4 1168
+0:0:0:0:0:0:0:1 - - [18/Nov/2020:08:47:07 +0800] "GET /shop-web/product/findAll HTTP/1.1" 200 2374 http-bio-8080-exec-5 70
+0:0:0:0:0:0:0:1 - - [18/Nov/2020:08:47:07 +0800] "GET /pic/7c0cd673ec53460596fc4f8f9e2c8f9e.jpg HTTP/1.1" 404 - http-bio-8080-exec-6 0
+0:0:0:0:0:0:0:1 - - [18/Nov/2020:08:47:07 +0800] "GET /pic/40660a1b4225421fa8e49cf1a67f607d.jpg HTTP/1.1" 404 - http-bio-8080-exec-2 0
+0:0:0:0:0:0:0:1 - - [18/Nov/2020:08:47:07 +0800] "GET /pic/2e0c092ccc9541049f351cd04be256c4.jpg HTTP/1.1" 404 - http-bio-8080-exec-7 0
+0:0:0:0:0:0:0:1 - - [18/Nov/2020:08:47:07 +0800] "GET /pic/124c924f50194c0f93c7ee630976b9be.jpg HTTP/1.1" 404 - http-bio-8080-exec-8 0
